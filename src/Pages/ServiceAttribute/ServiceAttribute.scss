@@ -1,0 +1,20 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.service-attributes-list-container{
+  width: 100%;
+}
+.MuiDialogActions-root{align-self: center;}
+.fae--text-field-container p {font-size: 13px;}
+
+@include tablet {
+  .fae--add-client-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--add-client-page-wrapper {
+    width: 95%;
+  }
+}

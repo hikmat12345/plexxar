@@ -1,0 +1,19 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.side-bar-main-container {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  gap: 30px;
+  background-color: #548dff;
+  padding-top: 30px;
+}
+
+.side-bar-each-unit {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 2px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+}

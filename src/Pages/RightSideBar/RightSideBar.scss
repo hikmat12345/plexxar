@@ -1,0 +1,19 @@
+.right-sidebar {
+    margin-top: 45px;
+    background-color: #f1f1f1;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 40px;
+    width: 100px;
+    align-items: center;
+}
+.right-sidebar div{
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
