@@ -1,0 +1,34 @@
+.side-notification {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  position: absolute;
+  width: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+  transition: 1s;
+  background: #548DFF;
+  right: 0;
+  display: flex;
+  top: 100px;
+  align-items: center;
+  gap: 10px;
+
+  .side-note {
+    &::before {
+      content: "";
+      height: 40px;
+    }
+  }
+
+  &:hover {
+    width: 200px;
+    transition: 1s;
+    // overflow: visible;
+  }
+
+  p {
+    color: white;
+    overflow: hidden;
+    width: 200px;
+  }
+}

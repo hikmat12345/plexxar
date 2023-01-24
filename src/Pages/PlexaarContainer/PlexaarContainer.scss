@@ -1,0 +1,15 @@
+@import "../../App.scss";
+
+.plexaar-main-container {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.plexaar-main-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}

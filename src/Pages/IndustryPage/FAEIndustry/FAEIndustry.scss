@@ -1,0 +1,30 @@
+@import "../../../App.scss";
+@import "../../../mediaQueries.scss";
+
+.fae--industry-container {
+  @include flex(none, center);
+  flex-direction: column;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.fae--industry-img {
+  width: 60px;
+  margin-bottom: 3px;
+}
+
+.fae--industry-text {
+  text-align: center;
+}
+
+@include tablet {
+  .fae--industry-img {
+    width: 50px;
+  }
+  .fae--industry-container {
+    margin-bottom: 10px;
+  }
+  .fae--industry-text {
+    font-size: 10px;
+  }
+}

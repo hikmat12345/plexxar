@@ -1,0 +1,8 @@
+@import "../../../App.scss";
+
+.fae--sub-industries {
+  @include flex(none, none);
+  flex-direction: column;
+  gap: $default-section-gap;
+  width: 100%;
+}

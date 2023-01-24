@@ -1,0 +1,37 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.services-container{
+  width: 80%;
+  background: aliceblue;
+  padding: 20px;
+}
+.services{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.service-name{
+  list-style: circle;
+}
+.arrow{
+  font-size: 18px;
+}
+
+.sub-services-container{
+  width: 60%;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+@include tablet {
+  .fae--add-client-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--add-client-page-wrapper {
+    width: 95%;
+  }
+}

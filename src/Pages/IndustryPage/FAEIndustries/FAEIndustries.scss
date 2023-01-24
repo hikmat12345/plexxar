@@ -1,0 +1,36 @@
+@import "../../../App.scss";
+@import "../../../mediaQueries.scss";
+
+.fae--industries-main-container {
+  width: 100%;
+}
+
+.fae--industries-container {
+  @include flex(none, none);
+  flex-wrap: wrap;
+}
+
+.fae--industry-container {
+  width: 16.6%;
+}
+
+.fae--remaining-industries-container {
+  width: 100%;
+}
+
+.fae--up-arrow,
+.fae--down-arrow {
+  width: 100%;
+  cursor: pointer;
+}
+
+.MuiCollapse-wrapperInner {
+  @include flex(none, none);
+  flex-wrap: wrap;
+}
+
+@include tablet {
+  .fae--industry-container {
+    width: 20%;
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../App.scss";
+
+.industry--page-unit-accordion {
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: inherit;
+  border-radius: 5px;
+}
+
+.industry--page-clickable-units {
+  min-height: 48px;
+  justify-content: flex-start;
+}
+
+#panel1a-content {
+  width: 100%;
+}
+
+.industry-page-accordion-detials {
+  width: 95%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.services--page-unit-accordion {
+  width: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  position: inherit;
+  border-radius: 5px;
+}
+
+.services--page-clickable-units {
+  min-height: 48px;
+  justify-content: flex-start;
+}
+
+#panel1a-content {
+  width: 100%;
+}
+
+.services-page-accordion-detials {
+  width: 95%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sub-industry-page-main {
+  width: 100%;
+  margin-top: 5%;
+
+  .main-heading {
+    text-align: center;
+    margin-top: -5%;
+  }
+}
+
+.plexaar-main-container:has(.sub-industry-page-main) {
+  background-color: #f8f9ff;
+  gap: 20px;
+}

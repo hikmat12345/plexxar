@@ -1,0 +1,46 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.cart-detail{width: 100%;}
+.fae-cart-del-btn {
+  background-color: #918b8b1f;
+  text-align: right;
+  color: #b7b0b0;
+  border-radius: 50%;
+  padding: 8px 9px;
+  position: relative;
+  top: -80px;
+  left: 600px;
+}
+.fae-cart-del-btn:active{border: 1px solid;}
+
+.cart-detail .fae--product-card{
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+.cart-detail .fae--product-card-amount-of-products-action-and-price-wrapper{
+  display: block;
+}
+.cart-detail .fae--card-content {
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cart-detail .fae--product-card-amount-of-products-action-wrapper {margin-top: 80px !important; width: 80px !important;}
+.cart-detail .fae--product-card-add-to-card-button-wrapper {display: none;}
+
+.cart-detail .checkout-btn{
+  float: right;
+  margin-bottom: 15px;
+  background-color: #548dff !important;
+}
+.cart-detail .fae--product-card-image-or-video{
+  width: 200px !important;
+}
+.cart-detail .MuiOutlinedInput-input{
+  text-align: center;
+  padding: 5px !important;
+  width: 50px;
+}

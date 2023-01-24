@@ -1,0 +1,22 @@
+@import "../../../App.scss";
+@import "../../../mediaQueries.scss";
+
+.fae--sub-industry {
+  @include flex(space-between, center);
+  width: 100%;
+  cursor: pointer;
+}
+
+.fae--sub-industry-content {
+  @include flex(none, center);
+  gap: 20px;
+}
+
+.fae--sub-industry-icon {
+  width: 50px;
+}
+
+.fae--sub-industry-icon svg {
+  cursor: pointer;
+  font-size: 15px;
+}

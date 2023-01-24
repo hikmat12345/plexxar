@@ -1,0 +1,35 @@
+.plexaar--nav-bar-container {
+    background-image: linear-gradient(to top, #f7f7f7, #f3f3f3);
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+// Header styles User
+.fae--account-dropdown .fae--text {
+    padding: 7px 8px 8px;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.fae--account-dropdown .fae--text:after {
+    content: "welcome";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    color: #b2b1b1;
+    font-weight: 400 !important;
+}
+
+
+.fae--account-dropdown .MuiSvgIcon-root {
+    background-color: #fff;
+    padding: 3px;
+    margin-top: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
