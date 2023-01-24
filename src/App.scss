@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import "./mediaQueries.scss";
+
+
+.primary-backColor {
+  background: #548dff;
+}
+
+.secondary-backColor {
+  background: #ebebeb;
+}
+
+.gray-text-color {
+  color: #787878;
+}
+
+.black-text-color {
+  color: #222222;
+}
+
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+a {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+.red-text {
+  color: #dc0000;
+}
+
+.dpr {
+  padding-right: 1%;
+}
+
+.dpl {
+  padding-left: 1%;
+}
+
+.dpb {
+  padding-bottom: 30px;
+}
+
+.dpt {
+  padding-top: 30px;
+}
+
+.dp {
+  padding: 1%;
+}
+
+
+$default-button-bg: #dc0000;
+$primary-button-bg: #f2f2f2;
+
+$primary-text-color: black;
+$secondary-text-color: #548dff;
+
+$primary-bg: #dc0000;
+$advertisement-bg: #f1e5e9;
+$iMac-frame-color: #222222;
+
+$white-color: #ffffff;
+
+$default-section-gap: 10px;
+
+$default-side-padding: 1%;
+
+@mixin flex($propert1, $property2) {
+  display: flex;
+  justify-content: $propert1;
+  align-items: $property2;
+}
+
+$container-bg-primary: rgba(244, 244, 244, 1);
+
+@include mobile {
+  .fae--footer-social-link {
+    width: 35px;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
