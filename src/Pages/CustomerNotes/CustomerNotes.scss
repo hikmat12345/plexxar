@@ -1,0 +1,396 @@
+@import '../../App.scss';
+
+.containerSection {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+
+    .noteHeader {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 30px;
+
+        .topProfile {
+            box-shadow: rgba(0, 0, 0, 0.01) 0px 10px 20px, rgba(0, 0, 0, 0.09) 0px 6px 6px;
+            width: 100%;
+            height: 100px;
+            background: #f4f8f9;
+            align-items: center;
+            display: flex;
+
+            .topProfileSub {
+                width: 70%;
+                margin: 0 auto;
+                height: 100%;
+                box-sizing: border-box;
+
+                .TopSection {
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        padding: 10px 30px;
+                        box-sizing: border-box;
+
+                        .imgDiv {
+                            width: 35px;
+                            height: 35px;
+                            cursor: pointer;
+                            border: 2px solid #fff;
+                            padding: 5px;
+                            border-radius: 100%;
+                            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .text-item {
+                            padding: 0 20px;
+
+                            h3 {
+                                color: #548dff;
+                                font-family: 'Poppins', sans-serif;
+                                letter-spacing: 1;
+                                text-transform: capitalize;
+                                font-size: 18px;
+                                line-height: 20px;
+                            }
+
+                            span {
+                                font-size: 11px;
+                                font-weight: 600;
+                                color: #787878;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+
+                    }
+
+
+                    .createBooking {
+                        width: 200px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            margin-right: 10px;
+                            border: 2px solid #fff;
+                            border-radius: 10px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        span {
+                            color: #548dff;
+                            font-family: 'Poppins', sans-serif;
+                            text-transform: capitalize;
+                            font-size: 12px;
+                            font-weight: 600;
+
+                            // line-height: 20px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+
+    // detailSection
+
+    .detailSection {
+        width: 70%;
+        height: auto;
+        margin: 0px auto;
+        box-sizing: border-box;
+        background: #f4f8f9;
+        border-radius: 10px;
+
+        .detailTop {
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .serviceDiv {
+                flex: 3;
+                height: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+
+                span {
+                    text-transform: capitalize;
+                    color: #787878;
+                    font-size: 12px;
+                    font-family: 'Poppins', sans-serif;
+                    margin-bottom: 5px;
+
+                    svg {
+                        color: #787878;
+                        width: 15px;
+                        align-self: center;
+                        margin-top: 0px;
+                        margin-left: 5px;
+                        position: absolute;
+                    }
+
+                }
+
+                h5 {
+                    color: #333333;
+                    font-weight: 600;
+                    font-size: 15px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+
+            .service {
+                flex: 1;
+                height: 100%;
+
+                .detailItem {
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 10px;
+                    }
+
+                    h5 {
+                        color: #333333;
+                        margin-left: 5px;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                }
+
+                .expertIcon {
+                    width: 60%;
+                    margin: 0 auto;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+
+        // Note Heading
+        .noteheading {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #fff;
+            text-align: center;
+
+            h4 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 17px;
+            }
+
+            span {
+                padding: 20px 0;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        // customerNotesDetail
+        .customerNotesDetail {
+            width: 100%;
+            height: auto;
+            padding: 0 20px 20px 20px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+
+            .save-btn-notes {
+                width: 30%;
+                height: 30px;
+                border-radius: 6px;
+            }
+
+            .spanText {
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+
+                .NotVales {
+                    font-size: 14px !important;
+                    color: #787878;
+                    text-transform: capitalize;
+                }
+
+                span {
+                    color: #787878;
+                    font-size: 12px;
+                }
+            }
+
+            .notesList {
+                list-style: none;
+                padding-left: 20px;
+                margin-top: 20px;
+                box-sizing: border-box;
+
+                .notesList-item {
+                    border-bottom: 1px solid #548dff23;
+
+                    .date-time-container {
+                        @include flex(space-between, center);
+
+                        .date-time {
+                            font-size: 11px;
+                            text-align: end;
+                        }
+                    }
+                }
+
+
+                // display: flex;
+                // justify-content: flex-start;
+                // align-items: center;
+                // flex-wrap: wrap;
+                // min-height: 80px;
+                // max-height: 200px;
+                // background-color: #fff;
+                // overflow-y: scroll;
+                // margin-bottom: 20px;
+                // padding: 20px;
+                // border-radius: 10px;
+
+                li {
+                    background-color: #f4f8f9;
+                    padding: 5px 0px;
+                    color: #787878;
+                    // border-radius: 10px;
+                    // box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+                    // backdrop-filter: blur(5px);
+                    // -webkit-backdrop-filter: blur(5px);
+                    // border: 1px solid rgba(244, 248, 249, 0.39);
+
+                }
+            }
+
+            .picDiv {
+                width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+
+                h4 {
+                    color: #333333;
+                    font-weight: 600;
+                    font-size: 13px;
+                    font-family: 'Poppins', sans-serif;
+                    margin-bottom: 5px;
+                }
+
+                .pictureDiv {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .picture {
+                        width: 24%;
+                        height: 150px;
+                        margin-right: 20px;
+                        background-color: #fff;
+                        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 6px, rgba(0, 0, 0, 0.09) 0px 3px 6px;
+                        border-radius: 5px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .vedio {
+                        width: auto;
+                        height: auto;
+                        margin-right: 20px;
+                        background-color: #000;
+                        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 6px, rgba(0, 0, 0, 0.09) 0px 3px 6px;
+                        border-radius: 5px;
+
+                        video {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // NOte Heading
+    .expertheading {
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #fff;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    textarea {
+        width: 98%;
+        margin: 0 auto;
+        border: 1px solid #548dff;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+
+        :focus-visible {
+            border: 1px solid #548dff !important;
+            outline: none;
+        }
+    }
+
+}

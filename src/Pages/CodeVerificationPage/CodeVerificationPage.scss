@@ -1,0 +1,71 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.verify--code-main {
+  width: 100%;
+  background: #dfdfdf;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+
+  .fae--code-input input {
+    box-shadow: none !important;
+    // border: 1px solid #548DFF !important;
+    background: #F1F6FA;
+    font-size: 18px;
+    width: 40px !important;
+    height: 40px !important;
+
+    &:focus-visible {
+      border: 2px solid #548DFF !important;
+      outline: none;
+    }
+
+    &:focus {
+      border: 2px solid #548DFF !important;
+    }
+  }
+
+  .fae--code-input {
+    gap: 10px !important;
+  }
+}
+
+.verify--code-input-wrapper {
+  width: 405px;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  margin: calc(68vh - 350px) auto;
+  border-radius: 5px;
+  padding: 20px;
+
+  .verify-code-btn {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .resend-code {
+      background-color: transparent !important;
+      color: #548DFF !important;
+    }
+
+    .fae-button {
+      background-color: #548dff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      padding: 5px 20px;
+      cursor: pointer;
+      width: 120px;
+      height: 40px;
+    }
+  }
+}
+
+.verification-text {
+  font-size: medium;
+}

@@ -1,0 +1,239 @@
+@import "../../App.scss";
+
+.consent-form-main {
+  width: 100%;
+  font-family: 'Poppins';
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  .consent-questions {
+    width: 65%;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+
+
+  .signature-consent {
+    @include flex(center, center);
+    flex-direction: column;
+    border: 1px dashed;
+    padding: 10px;
+  }
+
+  .consent-save-btn {
+    margin: 0 auto 20px;
+    display: grid;
+  }
+
+  .top-consent-container {
+    width: 100%;
+    background-color: #F4F8F9;
+
+    .top-consent-detail {
+      @include flex(center, flex-start);
+      flex-direction: row;
+      width: 65%;
+      margin: auto;
+      padding: 20px 0;
+      gap: 40px;
+
+      .consent-row {
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+        width: 65%;
+        gap: 30px;
+
+        .consent-name {
+          @include flex(center, none);
+          flex-direction: column;
+
+          .name-head {
+            display: flex;
+
+            p {
+              font-weight: 500;
+              color: #548dff;
+            }
+
+            .css-ci5apu-MuiSvgIcon-root {
+              margin-top: -5px;
+            }
+          }
+
+          .customer-gender-main {
+            display: flex;
+            gap: 10px;
+
+            .gender {
+              @include flex(space-between, center);
+              gap: 5px;
+
+              .round-gender-icon {
+                border-radius: 20px;
+                cursor: pointer;
+
+                path {
+                  fill: white;
+                }
+              }
+            }
+
+
+          }
+
+          #lastName:focus,
+          #firstName:focus {
+            border-bottom: 1px solid #548dff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.topProfile {
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 10px 20px, rgba(0, 0, 0, 0.09) 0px 6px 6px;
+  width: 100%;
+  height: 100px;
+  background: #EDF2F8;
+  align-items: center;
+  display: flex;
+
+  .topProfileSub {
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+
+    .TopSection {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 10px 30px;
+        box-sizing: border-box;
+
+        .imgDiv {
+          width: 35px;
+          height: 35px;
+          cursor: pointer;
+          border: 2px solid #fff;
+          padding: 5px;
+          border-radius: 100%;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .text-item {
+          padding: 0 20px;
+
+          h3 {
+            color: #548dff;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 1;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 20px;
+          }
+
+          span {
+            font-size: 11px;
+            font-weight: 600;
+            color: #787878;
+            font-family: 'Poppins', sans-serif;
+          }
+        }
+
+      }
+
+
+      .createBooking {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          border: 2px solid #fff;
+          border-radius: 10px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: #548dff;
+          font-family: 'Poppins', sans-serif;
+          text-transform: capitalize;
+          font-size: 12px;
+          font-weight: 600;
+
+          // line-height: 20px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.questions-answers-main-container {
+  @include flex(center, none);
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  .line-label-head {
+    width: 50%;
+    height: 2px;
+    border: 0;
+    margin: auto;
+    // margin-top: 20px;
+    background-color: #548dff;
+  }
+
+}
+
+.questions-answers-questions-container {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .questions-answers-questions-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .questions-answers-questions-container {
+    width: 90%;
+  }
+}
+
+.questions-answers-main-container {
+  .questionlist {
+    width: 100%;
+  }
+}
+
+
+.no-question {
+  margin: auto;
+}

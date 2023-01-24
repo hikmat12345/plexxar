@@ -1,0 +1,21 @@
+.label-questions-main-container {
+    text-align: justify;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+
+    textarea:focus,
+    textarea:focus-visible {
+        outline: none;
+    }
+
+    .label-questions-text-area {
+        width: 100%;
+        height: auto;
+        font-family: 'Poppins';
+        // :focus-visible,
+        // :focus {
+        //     outline: none !important;
+        // }
+    }
+}

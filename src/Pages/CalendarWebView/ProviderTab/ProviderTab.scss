@@ -1,0 +1,13 @@
+@import "../../../App.scss";
+
+.provider-tab-info-wrapper {
+  @include flex(center, center);
+  flex-direction: column-reverse;
+  gap: 5px;
+  //padding: 5px 0 5px 0;
+}
+.provider-tab-info-wrapper .MuiAvatar-root{
+  width: 30px !important;
+  height: 30px !important;
+}
+.provider-tab-info-wrapper p{font-size: 10px !important;}

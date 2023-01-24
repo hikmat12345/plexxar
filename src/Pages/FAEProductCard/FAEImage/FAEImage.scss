@@ -1,0 +1,75 @@
+@import "../../../mediaQueries.scss";
+
+.fae--service-card-image-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 0px;
+  background-color: rgba(220, 0, 0, 1);
+  padding: 5px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  background-color: rgba(220, 0, 0, 1);
+  padding: 5px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  background-color: rgba(220, 0, 0, 1);
+  padding: 5px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+  background-color: rgba(220, 0, 0, 1);
+  padding: 5px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(220, 0, 0, 1);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@include mobile {
+  .bottom-left {
+    padding: 3px;
+  }
+
+  .top-left {
+    padding: 3px;
+  }
+
+  .top-right {
+    padding: 3px;
+  }
+
+  .bottom-right {
+    padding: 3px;
+  }
+
+  .centered {
+    padding: 3px;
+  }
+}

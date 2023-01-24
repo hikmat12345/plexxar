@@ -1,0 +1,41 @@
+.radio-questions-question {
+  font-size: 12px;
+  /* font-weight: 600; */
+  margin-bottom: 10px;
+}
+
+.radio-questions-radio-images {
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio-questions-option-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-questions-main-container {
+  margin-bottom: 20px;
+  /* padding: 0px 0px 0px 15px; */
+}
+
+.required-optional-question {
+  font-size: 11px;
+  font-weight: 100;
+}
+
+.radio-questions-option-list {
+  display: flex;
+  margin-right: 30px;
+}
+
+@media (max-width: 750px) {
+  .radio-questions-option-container {
+    display: block;
+  }
+
+  .radio-questions-option-list {
+    margin-bottom: 5px;
+  }
+}

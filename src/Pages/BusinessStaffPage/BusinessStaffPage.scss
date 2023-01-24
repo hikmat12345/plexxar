@@ -1,0 +1,74 @@
+@import "../../App.scss";
+
+.your-staff-main {
+  width: 100%;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+}
+
+.staff-page-main-container {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+
+}
+
+.staff-page-main-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  p {
+    font-family: 'Poppins';
+  }
+
+  .css-1idedao-MuiSvgIcon-root,
+  .css-15yr02a-MuiSvgIcon-root,
+  .css-he82x6-MuiSvgIcon-root {
+    width: 10px !important;
+  }
+
+  .css-1jbbcbn-MuiDataGrid-columnHeaderTitle,
+  .MuiDataGrid-cell--withRenderer {
+    font-size: 12px !important;
+  }
+
+  .MuiDataGrid-root {
+    border: 0px !important;
+
+    .MuiDataGrid-columnHeader {
+
+
+      svg {
+        display: none !important;
+      }
+    }
+  }
+
+  .MuiDataGrid-columnHeaderTitle {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: #000 !important;
+  }
+}
+
+.add-staff-button {
+  @include flex(space-between, center);
+  width: 100%;
+
+  .fae-button {
+    padding: 10px 20px !important;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+}
+
+.MuiDataGrid-cell:nth-child(2) {
+  text-transform: capitalize;
+}

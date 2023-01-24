@@ -1,0 +1,153 @@
+.fc {
+  width: 100%;
+  height: 90vh;
+}
+
+.fc-button-primary {
+  display: none;
+}
+
+.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child) {
+  padding: 0;
+}
+
+.fc-next-button {
+  padding: 0.4em 0.65em !important;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
+  margin: 0;
+}
+
+.fc-resourceTimeGridFourDay-button {
+  border-radius: 0 !important;
+}
+
+.fc-dayGridMonth-button {
+  border-radius: 0px 0.25em 0.25em 0px !important;
+}
+
+.fc-today-button {
+  margin-right: 20px !important;
+}
+
+.fc .fc-non-business {
+  background-color: rgb(41, 40, 40);
+  opacity: 0.3;
+}
+
+.fc-toolbar-chunk div {
+  display: flex;
+}
+
+
+.fc .fc-timegrid-slot-label {
+  border: none !important;
+}
+
+.fc .fc-timegrid-axis-chunk {
+  margin-top: -14px;
+  margin-bottom: 14px;
+}
+
+.fc .fc-timegrid-axis-chunk tr:nth-child(1) p {
+  display: none;
+}
+
+// header border
+.fc-col-header-cell {
+  border: none !important;
+}
+
+// .fc-scrollgrid-section-header,
+// .fc-timegrid-axis-chunk {
+//   background: rgba(234, 229, 229, 0.28);
+// }
+
+.fc-timegrid-axis {
+  border: none !important;
+}
+
+.fc .fc-scrollgrid-section>* {
+  border: none !important;
+}
+
+// .fc-scroller-harness-liquid {
+//   box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.2);
+//   margin-left: 5px;
+// }
+
+//.fc .fc-timegrid-slot-label{padding-right: 5px;}
+
+.fc .fc-timegrid-axis-cushion,
+.fc .fc-timegrid-slot-label-cushion {
+  padding: 0 4px;
+  //margin-top: -30px !important;
+  position: relative;
+  //top: -12px;
+}
+
+.fc-timegrid-slots table tbody tr:nth-child(1) td .fae--text {
+  display: none;
+
+}
+
+
+.fc .fc-timegrid-slot-label {
+  border: none !important;
+}
+
+// .fc .fc-timegrid-axis-chunk {
+// margin-top: -15px;
+// }
+
+.fc .fc-timegrid-axis-chunk tr:nth-child(1) p {
+  display: none;
+}
+
+.fc-event {
+  margin: 1px 0px;
+}
+
+.fc-col-header-cell {
+  border: none !important;
+}
+
+.fc-scrollgrid-section-header,
+.fc-timegrid-axis-chunk {
+  background: rgba(234, 229, 229, 0.28);
+}
+
+.fc-timegrid-axis {
+  border: none !important;
+}
+
+.fc .fc-scrollgrid-section>* {
+  border: none !important;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 1px solid #ddd;
+  border: 1px solid var(--fc-border-color, #ddd);
+}
+
+
+.fc-scroller-harness-liquid {
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 1px 10px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.fc-event-main{
+  overflow: hidden;
+  p{
+    width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+.fc-timegrid-event-harness{margin-right: -2px;}
