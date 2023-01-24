@@ -1,0 +1,13 @@
+<svg id="home-4-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_29912" data-name="Path 29912" d="M0,0H20V20H0Z" fill="#4a4a4a"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_120" data-name="Mask Group 120" clip-path="url(#clip-path)">
+    <g id="building-line">
+      <path id="Path_29915" data-name="Path 29915" d="M0,0H20V20H0Z" fill="none"/>
+      <path id="Path_29916" data-name="Path 29916" d="M17.5,15.833h1.667V17.5H.833V15.833H2.5V3.333A.833.833,0,0,1,3.333,2.5h8.333a.833.833,0,0,1,.833.833v12.5h3.333V9.167H14.167V7.5h2.5a.833.833,0,0,1,.833.833ZM4.167,4.167V15.833h6.667V4.167Zm1.667,5H9.167v1.667H5.833Zm0-3.333H9.167V7.5H5.833Z" fill="#4a4a4a"/>
+    </g>
+  </g>
+</svg>
