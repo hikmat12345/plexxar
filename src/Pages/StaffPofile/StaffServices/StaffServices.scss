@@ -1,0 +1,19 @@
+@import "../../../App.scss";
+
+.add-services-button {
+  @include flex(flex-end, center);
+  width: 100%;
+}
+
+.services-page-each-unit {
+  padding: 15px;
+  gap: 20px;
+}
+
+.services-page-delete-icon {
+  color: $secondary-text-color;
+}
+
+.services-page-address-text {
+  width: 100%;
+}

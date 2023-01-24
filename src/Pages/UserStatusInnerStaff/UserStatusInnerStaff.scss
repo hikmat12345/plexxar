@@ -1,0 +1,153 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.staff-onboard-main {
+  width: 100%;
+
+  .status-page-status-unit {
+    // background-color: #e5f6f0;
+    @include flex(space-between, center);
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .status-page-status-unit-icon-and-label {
+    @include flex(flex-start, center);
+    gap: 5px;
+
+    p {
+      font-size: 14px;
+      color: #474747;
+    }
+
+    .user-status-icon {
+      width: 30px
+    }
+  }
+
+  .status-page-status-unit-stage {
+    @include flex(center, center);
+    flex-direction: column;
+  }
+
+  .status-page-status-unit-icon {
+    padding: 15px;
+    background-color: #548dff;
+    color: white;
+  }
+
+  .status-page-status-units-wrapper {
+    @include flex(center, center);
+    // gap: 15px;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+
+    .user-status-line {
+      width: 96%;
+      border: 1px solid lightgray;
+    }
+
+    .status-page-inside {
+      width: 100%;
+
+      .current-status-unit {
+        background-color: #5599ff;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.16);
+        padding: 10px;
+        margin: -30px 0;
+
+        .status-page-status-unit-icon-and-label {
+          p {
+            color: white;
+            font-size: 16px;
+          }
+
+          .text-heading {
+            .head-text {
+              line-height: 1;
+            }
+
+            .sub-head-text {
+              line-height: 1;
+              font-weight: 300;
+              font-size: 14px;
+              color: #e8e8e8;
+            }
+          }
+        }
+      }
+
+      .after-status-unit {
+        // background-color: #ffffff;
+
+        .status-page-status-unit-icon-and-label {
+          p {
+            color: #d4d8ef;
+          }
+        }
+      }
+
+      .css-9ik4ik-MuiTimelineDot-root {
+        box-shadow: none !important;
+        background-color: darkgray;
+      }
+
+      .css-7kp53o-MuiTimelineDot-root,
+      .css-1uwk1ka-MuiTimelineDot-root,
+      .css-9ik4ik-MuiTimelineDot-root {
+        margin: 0;
+      }
+
+      .css-18y2uza-MuiTypography-root-MuiTimelineContent-root {
+        padding: 0, 16px;
+
+        div p {
+          line-height: 0;
+        }
+      }
+    }
+  }
+
+  .disabled-unit {
+    pointer-events: none;
+  }
+
+  .in-active-unit-icon {
+    background-color: gray;
+  }
+
+  .plexaar-main-container:has(.status-page-status-units-wrapper) {
+    background-color: #F7F7FF;
+  }
+
+
+
+  .css-6l1m71-MuiTimeline-root {
+    width: 100%;
+  }
+
+  .staff-onboard-profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .MuiButtonBase-root {
+      position: absolute !important;
+      padding: 9px;
+    }
+
+    .profile {
+      width: 80%;
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+
+}

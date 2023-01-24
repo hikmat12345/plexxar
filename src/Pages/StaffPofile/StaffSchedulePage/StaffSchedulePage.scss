@@ -1,0 +1,16 @@
+@import "../../../App.scss";
+
+.schecdule--page-each-unit {
+  @include flex(center, center);
+  gap: 20px;
+}
+
+.schedule--page-select {
+  display: block;
+}
+
+.schedule--page-units-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+}

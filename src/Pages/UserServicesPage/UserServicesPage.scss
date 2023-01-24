@@ -1,0 +1,153 @@
+@import "../../App.scss";
+
+.add-services-button {
+  @include flex(space-between, center);
+  width: 100%;
+
+  .fae-button {
+    border-radius: 8px;
+    padding: 8px 20px;
+  }
+}
+
+.services-page-each-unit {
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f8f9ff;
+  box-shadow: none !important;
+  gap: 20px;
+  justify-content: space-between;
+
+  .service-name {
+    .head-text {
+      font-weight: 500;
+      font-size: 14px;
+      color: #474747;
+    }
+
+    .sub-head-text {
+      font-weight: 500;
+      font-size: 12px;
+      color: #9b9b9b;
+    }
+  }
+
+  .approved {
+    background-color: #E5FAF6;
+    border-radius: 20px;
+    padding: 0 10px;
+
+    p {
+      color: #1ce0a3;
+    }
+  }
+
+  .pending {
+    background-color: #FDF5ED;
+    border-radius: 20px;
+    padding: 0 10px;
+
+    p {
+      color: #fdae54;
+    }
+  }
+}
+
+.services-page-delete-icon {
+  color: $secondary-text-color;
+}
+
+.services-page-address-text {
+  width: 100%;
+}
+
+.plexaar-main-container:has(.user-service-main) {
+  background-color: #f8f9ff;
+}
+
+.user-service-main {
+  width: 100%;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+
+  .user-service-inside {
+    width: 60%;
+    min-height: 70%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .page-logo {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .main-head {
+      text-align: center;
+    }
+
+    .user-service-back-btn {
+      background-color: #548dff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 40%;
+      margin: 5px auto;
+    }
+
+    .search {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 5px;
+      position: relative;
+
+      input {
+        width: 380px;
+        border-radius: 20px;
+        background-color: #548dff1b;
+        padding: 10px 20px 10px 50px;
+        outline: none;
+        border: 0px;
+        box-sizing: border-box;
+        color: #787878;
+        transition: 0.5s;
+
+        &:focus {
+          width: 550px;
+          background-color: #548dff1b;
+
+        }
+      }
+
+      label {
+        // background-color: #fff;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+        top: 9px;
+        left: 15px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        svg {
+          color: #787878;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

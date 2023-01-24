@@ -1,0 +1,245 @@
+.fc {
+  width: 100%;
+  // height: 90vh;
+}
+
+.fc-button-primary {
+  display: none;
+}
+
+.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child) {
+  padding: 0;
+}
+
+.fc-next-button {
+  padding: 0.4em 0.65em !important;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
+  margin: 0;
+}
+
+.fc-resourceTimeGridFourDay-button {
+  border-radius: 0 !important;
+}
+
+.fc-dayGridMonth-button {
+  border-radius: 0px 0.25em 0.25em 0px !important;
+}
+
+.fc-today-button {
+  margin-right: 20px !important;
+  background-color: #548DFF !important;
+  color: white !important;
+}
+
+.fc .fc-non-business {
+  background-color: rgb(41, 40, 40);
+  opacity: 0.3;
+}
+
+.fc-toolbar-chunk div {
+  display: flex;
+}
+
+//modal
+.modal-container {
+  margin-top: 100px;
+  margin-left: 30%;
+  height: 300px;
+  width: 500px;
+  background-color: rgb(255, 255, 255)
+}
+
+.modal-box {
+  background-color: white;
+  padding: 2% 2% 10% 5%;
+}
+
+.modal-text {
+  color: gray;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.modal-input {
+  width: 88%;
+  padding: 13px;
+  margin-left: 13px;
+
+}
+
+.modal-btn {
+  display: flex;
+  gap: 15px;
+  padding: 2% 5% 1% 0%;
+  float: right;
+}
+
+
+//toolbar
+.fc-header-toolbar {
+  width: 107%;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 0;
+}
+
+.fc .fc-button-primary {
+  background-color: transparent;
+  color: black;
+  margin: 2px;
+  font-size: 13px;
+  border-color: #fff;
+}
+
+.fc .fc-prevWeek-button,
+.fc .fc-nextWeek-button {
+  background-color: #f5f5f5;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: transparent;
+  color: black;
+  border-color: #d8d6d6;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 18px;
+  align-self: center;
+}
+
+.fc-button-group button {
+  margin: -5px;
+}
+
+.fc-selected-event {
+  border: 1px solid #000000 !important;
+  box-shadow: 1px 1px 10px 3px rgba(218, 214, 214, 0.8) !important;
+  transition: 0.5s;
+  //transform: scale(1.02);
+  //animation: event 10s ;
+}
+
+// @keyframes event{
+//   0%{
+//     transform: scale(1);
+//     //transform: rotate(0deg);
+//   }
+//   100%{
+//     transform: scale(2);
+//     //transform: rotate(360deg);
+//   }
+// }
+.fc-timegrid-event {
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+
+.fc-timegrid-event:hover {
+  border: 2px solid #e89393;
+  box-shadow: 1px 1px 10px 3px rgba(218, 214, 214, 0.8) !important;
+}
+
+.fc .fc-button-primary:not(:disabled):active,
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #548DFF;
+  border-color: #548DFF;
+}
+
+//for changing current day background color
+//  .fc .fc-timegrid-col.fc-day-today{
+//   background: #df7b6a !important;
+// } 
+
+.date-pick {
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+.fc-prevWeek-button,
+.fc-nextWeek-button:active {
+  background-color: #fa0404;
+}
+
+.filter-modal-container {
+  margin-top: 100px;
+  margin-left: 30%;
+  height: 170px;
+  width: 500px;
+  background-color: rgb(255, 255, 255)
+}
+
+.sub-business-names {
+  color: #548DFF;
+  cursor: pointer;
+}
+
+.fc .fc-timegrid-slot-label {
+  border: none !important;
+}
+
+.fc .fc-timegrid-axis-chunk {
+  margin-top: -14px;
+  margin-bottom: 14px;
+}
+
+.fc .fc-timegrid-axis-chunk tr:nth-child(1) p {
+  display: none;
+}
+
+.fc-event {
+  margin: 1px;
+}
+
+.fc-col-header-cell {
+  border: none !important;
+}
+
+.fc-scrollgrid-section-header,
+.fc-timegrid-axis-chunk {
+  background: rgba(234, 229, 229, 0.28);
+}
+
+.fc-timegrid-axis {
+  border: none !important;
+}
+
+.fc .fc-scrollgrid-section>* {
+  border: none !important;
+}
+
+.fc-scroller-harness-liquid {
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fc-event-main {
+  overflow: hidden;
+
+  p {
+    width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left !important;
+  }
+}
+
+//.fc .fc-timegrid-slot-label{padding-right: 5px;}
+
+.fc-today-button:disabled {
+  background: gray !important;
+}
+
+.provider-tab-info-wrapper {
+  .fae--text {
+    text-transform: capitalize;
+  }
+}
+
+.fc-toolbar-title {
+  width: 220px;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+@import "../../../App.scss";
+
+.add-or-update-address-form-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}

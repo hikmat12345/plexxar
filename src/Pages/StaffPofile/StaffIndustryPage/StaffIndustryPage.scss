@@ -1,0 +1,23 @@
+@import "../../../App.scss";
+
+.industry--page-unit-accordion {
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: inherit;
+  border-radius: 5px;
+}
+
+.industry--page-clickable-units {
+  min-height: 48px;
+  justify-content: flex-start;
+}
+
+#panel1a-content {
+  width: 100%;
+}
+
+.industry-page-accordion-detials {
+  width: 95%;
+  flex-direction: column;
+  gap: 20px;
+}

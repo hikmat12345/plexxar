@@ -1,0 +1,98 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+$main-background : '/onboard/main-background.png';
+
+.sign-in-page-main {
+  width: 100%;
+  background: #dfdfdf;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+}
+
+.fae--sign-in-page-form-wrapper {
+  width: 405px;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: $default-section-gap;
+  background-color: white;
+  margin: calc(68vh - 330px) auto;
+  border-radius: 8px;
+  padding: 20px;
+
+  .fae--shadow-box {
+    box-shadow: none;
+    background-color: #F1F6FA;
+  }
+
+  .shadow-box-padding {
+    padding: 0 0 6px !important;
+  }
+}
+
+.plexaar-main-container:has(.fae--sign-in-page-wrapper) {
+  background-color: #f9f8ff;
+}
+
+.fae--sign-in-page-form-button {
+  width: 200px;
+  height: 40px;
+}
+
+.sign-in-page-register-redirection {
+  text-align: center;
+}
+
+@include tablet {
+  .fae--sign-in-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--sign-in-page-wrapper {
+    width: 95%;
+  }
+}
+
+.sign-in-login-via {
+  display: flex !important;
+  margin-top: 20px;
+  justify-content: space-around;
+  gap: 10px;
+
+  .MuiRadio-colorSecondary.Mui-checked {
+    color: #548DFF;
+  }
+
+  .MuiSvgIcon-root {
+    width: 20px !important;
+  }
+}
+
+// .sign-in-login-via .MuiFormControlLabel-root {
+//   // margin-right: 17%;
+// }
+
+.verify--code-input-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reset-password {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.fae--radio-group-container {
+  width: 100% !important;
+}
+
+body:has(.mobile-view-main) {
+  .plexaar--footer-main-container {
+    display: none;
+  }
+}

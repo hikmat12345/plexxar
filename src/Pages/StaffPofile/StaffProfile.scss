@@ -1,0 +1,40 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.staff-profile-main .fae--edit-profile-page-form-wrapper {
+  width: 100%;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.staff-profile-main .fae--edit-profile-page-form-button {
+  width: 200px;
+  height: 40px;
+}
+
+@include tablet {
+  .fae--edit-profile-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--edit-profile-page-wrapper {
+    width: 100%;
+  }
+}
+.staff-profile-main {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 60%;
+}
+
+.staff-profile-password-change{
+  color: red;
+  cursor: pointer;
+}
+.staff-profile-password-change:hover{color: darkblue;}
+
+.staff-password-change-1{ display: flex; align-items: center; gap: 10px; cursor: pointer;}

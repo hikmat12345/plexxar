@@ -1,0 +1,123 @@
+@import "../../App.scss";
+
+.add-address-button {
+  @include flex(flex-end, center);
+  width: 100%;
+}
+
+.addresses-page-each-unit {
+  padding: 15px;
+  gap: 20px;
+}
+
+.addresses-page-delete-icon,
+.MuiSwitch-colorPrimary.Mui-checked {
+  color: $secondary-text-color;
+}
+
+.addresses-page-address-text {
+  width: 100%;
+}
+
+.plexaar-main-container:has(.address-page-main) {
+  background-color: #f8f9ff;
+}
+
+.address-page-container {
+  width: 100%;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+
+  .address-page-main {
+    width: 60%;
+    height: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    .page-logo {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .working-address {
+      .address-card {
+        display: flex;
+        background: #f8f9ff;
+        padding: 10px;
+        gap: 5px;
+        border-radius: 4px;
+      }
+    }
+
+    .address-back-to {
+      width: 30%;
+      margin: auto;
+    }
+
+    .residential-address {
+      .fae-button {
+        padding: 10px 20px;
+        width: 100%;
+      }
+
+      .address-card {
+        // display: flex;
+        background: white;
+        padding: 10px;
+        // gap: 5px;
+        border-radius: 4px;
+
+        .card-headline {
+          display: flex;
+          gap: 5px;
+        }
+
+        .miles-main {
+          margin-left: 24px;
+
+          .miles-head {
+            color: #9b9b9b;
+          }
+        }
+      }
+    }
+  }
+}
+
+.address-model {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .fae-button {
+    width: 40%;
+    padding: 8px 20px;
+    margin: auto;
+  }
+
+  .address-model-no-btn {
+    background-color: #f8f9ff;
+    color: #548dff;
+  }
+
+  .cancel-btn {
+    text-decoration: underline;
+    color: gray;
+    margin-top: -3px;
+    cursor: pointer;
+  }
+
+  .css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    background-color: #E5F0FF;
+  }
+
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: none !important;
+  }
+}

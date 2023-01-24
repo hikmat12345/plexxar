@@ -1,0 +1,48 @@
+.mobile-view-main {
+    background: red;
+    height: 548px;
+
+    .exp-logo {
+        width: 30%;
+        margin: 15px 35%;
+    }
+
+    .links-main {
+        background: white;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        height: 69vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+
+        .plex-logo {
+            width: 100px;
+            margin: 25px auto 0 auto;
+        }
+
+        .store-logo {
+            width: 150px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-view-main {
+        .headline {
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            margin: auto 20px;
+            text-shadow: 0.5px 0.5px #0000001f;
+        }
+    }
+
+}

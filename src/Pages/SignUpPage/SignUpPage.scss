@@ -1,0 +1,64 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.sign-up-page-main {
+  width: 100%;
+  background: #dfdfdf;
+  background: url('../../img/main-background.png');
+  // background: url('~/public/onboard/main-background.png') no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+.fae--sign-up-page-form-wrapper {
+  width: 405px;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: $default-section-gap;
+  background-color: white;
+  margin: calc(68vh - 288px) auto;
+  border-radius: 8px;
+  padding: 20px;
+
+  .fae--shadow-box {
+    box-shadow: none;
+    background-color: #F1F6FA;
+  }
+
+  .shadow-box-padding {
+    padding: 0 !important;
+    border-radius: 8px;
+  }
+
+  .fae--text-field-container,
+  .fae--phone-input-container {
+    gap: 0 !important;
+    margin: 5px 0;
+  }
+}
+
+.fae--sign-up-page-form-button {
+  width: 150px;
+  font-size: 16px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+@include tablet {
+  .fae--sign-up-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--sign-up-page-wrapper {
+    width: 95%;
+  }
+}
+
+body:has(.mobile-view-main) {
+  .plexaar--footer-main-container {
+    display: none;
+  }
+}

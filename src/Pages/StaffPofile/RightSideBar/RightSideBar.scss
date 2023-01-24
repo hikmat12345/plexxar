@@ -1,0 +1,21 @@
+.staff-right-sidebar {
+    //margin-top: 135px;
+    margin-right: 10px;
+    background-color: #4b7eec;
+    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 40px;
+    width: 100px;
+    align-items: center;
+}
+.staff-right-sidebar div{
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+.staff-right-sidebar span{color: white;}

@@ -1,0 +1,78 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.update-profile-page-main {
+  width: 100%;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+}
+
+.fae--edit-profile-page-form-wrapper {
+  width: 60%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+
+  .fae--shadow-box {
+    box-shadow: none !important;
+    background: #F1F6FA;
+    border-radius: 8px;
+
+    .PrivateRadioButtonIcon-root-5 {
+      .MuiSvgIcon-root {
+        color: #548dff;
+      }
+    }
+
+    .fae--text-field-container,
+    .fae--phone-input-container,
+    .fae--select-container,
+    .fae--date-picker-container,
+    .fae--radio-group-container {
+      width: 97% !important;
+
+      p {
+        margin: 0 !important;
+      }
+      
+      .MuiInputBase-input,
+      .DatePicker__input {
+        padding: 0 !important;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.fae--edit-profile-page-form-button {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px !important;
+}
+
+@include tablet {
+  .fae--edit-profile-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--edit-profile-page-wrapper {
+    width: 100%;
+  }
+}
+
+.update-profile-title {
+  width: 100%;
+  margin-top: 10px;
+
+  p {
+    font-size: 17px;
+    color: #444444;
+    font-weight: bold;
+  }
+}

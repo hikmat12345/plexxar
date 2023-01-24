@@ -1,0 +1,13 @@
+.add-service-location-checkbox{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.add-service-location-checkbox p:first-child{ align-self: normal; margin-left: 15px;}
+.add-service-loc-checkbox-div{
+    display: flex;
+    gap: 20px;
+    /* text-align: center; */
+    align-items: center;
+    align-self: normal;
+}

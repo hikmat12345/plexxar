@@ -1,0 +1,118 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.user-status-container {
+  width: 100%;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+
+  .user-status-main {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px auto;
+
+    .page-logo {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .head-text {
+      text-align: center;
+      margin: 20px;
+
+      p {
+        text-transform: capitalize;
+      }
+    }
+
+    .status-page-status-unit {
+      background-color: #e5f6f0;
+      @include flex(space-between, center);
+      padding: 15px;
+      width: 100%;
+      cursor: pointer;
+      box-sizing: border-box;
+      border-radius: 8px;
+      // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .status-page-status-unit-icon-and-label {
+      @include flex(flex-start, center);
+      gap: 5px;
+
+      p {
+        font-size: 14px;
+        color: #474747;
+      }
+
+      .user-status-icon {
+        width: 30px
+      }
+    }
+
+    .status-page-status-unit-stage {
+      @include flex(center, center);
+      flex-direction: column;
+    }
+
+    .status-page-status-unit-icon {
+      padding: 15px;
+      background-color: #548dff;
+      color: white;
+    }
+
+    .status-page-status-units-wrapper {
+      @include flex(center, center);
+      gap: 15px;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 5px;
+      background-color: transparent;
+
+      .user-status-line {
+        width: 96%;
+        border: 1px solid lightgray;
+      }
+
+      .current-status-unit {
+        background-color: #5599ff;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.16);
+        padding: 10px;
+
+        .status-page-status-unit-icon-and-label {
+          p {
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .after-status-unit {
+        background-color: #f1f6fa;
+
+        .status-page-status-unit-icon-and-label {
+          p {
+            color: #d4d8ef;
+          }
+        }
+      }
+    }
+
+    .disabled-unit {
+      pointer-events: none;
+    }
+
+    .in-active-unit-icon {
+      background-color: gray;
+    }
+
+  }
+}
+
+// .plexaar-main-container:has(.user-status-main) {
+//   background-color: #f8f9ff;
+//   gap: 20px !important;
+// }

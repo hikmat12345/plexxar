@@ -1,0 +1,20 @@
+@import "../../../App.scss";
+
+.add-address-button {
+  @include flex(flex-end, center);
+  width: 100%;
+}
+
+.addresses-page-each-unit {
+  padding: 15px;
+  gap: 20px;
+}
+
+.addresses-page-delete-icon,
+.MuiSwitch-colorPrimary.Mui-checked {
+  color: $secondary-text-color;
+}
+
+.addresses-page-address-text {
+  width: 100%;
+}

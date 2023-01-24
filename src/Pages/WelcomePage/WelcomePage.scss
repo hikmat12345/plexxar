@@ -1,0 +1,41 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.welcome-page-welcome-unit {
+  background-color: #f7f7ff;
+  @include flex(space-between, center);
+  padding-right: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.welcome-page-welcome-unit-icon-and-label {
+  @include flex(flex-start, center);
+  gap: 20px;
+}
+
+.welcome-page-welcome-unit-stage {
+  @include flex(center, center);
+  flex-direction: column;
+}
+
+.welcome-page-welcome-unit-icon {
+  padding: 15px;
+  background-color: #548dff;
+  color: white;
+}
+
+.welcome-page-welcome-units-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.disabled-unit {
+  pointer-events: none;
+}
+
+.in-active-unit-icon {
+  background-color: gray;
+}
