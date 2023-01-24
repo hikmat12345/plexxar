@@ -1,0 +1,165 @@
+@import "../../../App.scss";
+@import "../../../mediaQueries.scss";
+
+
+.customer-exist-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+
+    .customer-exist-text-section{
+        display: flex;
+        justify-content: space-between; 
+        margin-bottom:5px;
+        
+        .marginLeft{
+            margin-left:5px;
+            color:rgb(157, 154, 154);
+            font-size:14px;
+            letter-spacing:0.5px;
+        }
+    }
+
+    // Verification section scc
+    .verification-container{
+        width:60%;
+        margin: 10px auto;
+        text-align:center;
+        padding:10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+       
+
+        .verify-heading{
+            font-size:16px;
+            color:#000;
+            margin-bottom:10px
+        }
+        .verify-heading-blue{
+            font-size:16px;
+            color:#153678;
+            margin-bottom:10px;
+            font-weight:bold;
+        }
+        .verif-icon-section{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #548dff12;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .verif-icon-item-section{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .active{
+                border:2px solid #548dff;
+
+            }
+
+            .verif-icon-item{
+                width:110px;
+                height: 110px;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px;
+                box-sizing: border-box;
+                flex-wrap: nowrap;
+
+                .MuiSvgIcon-root{
+                    font-size:30px;
+                    margin-bottom: 10px;
+                    color: #548dff;
+
+                }
+
+                .icon-text{
+                    color: rgb(103, 102, 102);
+                    letter-spacing:1px;
+                }
+            }
+        }
+
+
+        // input section scc
+        .verify-input-section{
+            // border: 1px solid red;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .btn-code{
+                width: 50%;
+            }
+            .disabled-btn{
+                background-color:#eee;
+                color: #000;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+
+    .verification-code{
+        width:60%;
+        margin: 30px auto;
+        text-align:center;
+        padding:10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .verify-heading{
+            font-size:16px;
+            color:#000;
+            margin-bottom:20px;
+        }
+
+        .btn-code{
+            width: 40%;
+            margin:20px auto;
+            padding:10px;
+            border-radius:20px;
+
+        }
+    }
+}
+
+
+@include mobile{
+    .booking-session-container .plexaar-main-wrapper{
+        width: 100% !important;
+    }  
+}
+
+// @include tablet{
+
+// }
+

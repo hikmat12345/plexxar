@@ -1,0 +1,26 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.fae--add-staff-page-form-wrapper {
+  width: 100%;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: $default-section-gap;
+}
+
+.fae--add-staff-page-form-button {
+  width: 200px;
+  height: 40px;
+}
+
+@include tablet {
+  .fae--add-staff-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--add-staff-page-wrapper {
+    width: 95%;
+  }
+}

@@ -1,0 +1,97 @@
+@import "../../App.scss";
+
+.services--page-unit-accordion {
+  width: 100%;
+  // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: inherit;
+  border-radius: 5px;
+}
+
+.services--page-clickable-units {
+  min-height: 48px;
+  justify-content: flex-start;
+}
+
+#panel1a-content {
+  width: 100%;
+}
+
+.services-page-accordion-detials {
+  width: 95%;
+  flex-direction: column;
+  gap: 20px;
+
+  hr {
+    border: none;
+    height: 1px;
+    background: #e8e8e8;
+  }
+
+  .preference {
+    display: flex;
+
+  }
+
+  .pref-options {
+    display: flex;
+    gap: 20px;
+
+    // justify-content: space-between;
+
+    .option {
+      border-radius: 4px;
+      border: solid 1px #f3f4f7;
+      background-color: #f8f9ff;
+      padding: 6px 18px 7px;
+      cursor: pointer;
+      color: black;
+
+      &:disabled {
+        color: #aeb8c6;
+      }
+    }
+
+    .option1 {
+      border-radius: 4px;
+      border: solid 1px #f3f4f7;
+      background-color: #4c93c5;
+      padding: 6px 18px 7px;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .fae-button {
+    padding: 15px;
+  }
+}
+
+
+.add-services-main {
+  width: 100%;
+  text-align: center;
+  // background-color: #f8f9ff;
+
+  .add-services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    // .MuiPaper-elevation1 {
+    //   box-shadow: none;
+    // }
+
+    .MuiAccordionSummary-content {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.plexaar-main-container:has(.add-services-main) {
+  // background-color: #f8f9f8;
+  gap: 20px;
+  .fae--title-container {
+    display: none;
+  }
+}

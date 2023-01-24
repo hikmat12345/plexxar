@@ -1,0 +1,50 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.fae--payment-details-page-main-container {
+  width: 100%;
+  @include flex(center, none);
+  flex-direction: column;
+  gap: $default-section-gap;
+}
+
+.fae--payment-details-cards-wrapper {
+  width: 100%;
+  @include flex(space-between, center);
+  flex-wrap: wrap;
+  row-gap: $default-section-gap;
+}
+
+.fae--payment-details-add-button {
+  cursor: pointer;
+}
+
+.fae--payment-details-heading-button-wrapper {
+  @include flex(space-between, center);
+}
+
+.fae--paymet-details-card-wrapper {
+  width: 47%;
+  padding: 10px 10px;
+  background-color: #f9f9f9;
+  @include flex(space-between, center);
+}
+
+.fae--payment-details-action {
+  cursor: pointer;
+}
+
+.fae--payment-card-unit-actions {
+  @include flex(center, center);
+  gap: 5px;
+}
+
+@include tablet {
+  .fae--paymet-details-card-wrapper {
+    width: 100%;
+  }
+}
+
+.fae--payment-details-page-main-container .plexaar-main-wrapper{
+    width: 90%;
+}

@@ -1,0 +1,157 @@
+.booking-container {
+    width: 100%;
+    background: #f8f8f8;
+    padding: 10px;
+}
+
+.booking-datetime {
+    width: 100%;
+    padding: 5px;
+}
+
+.booking-datetime-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.booking-date {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.booking-time {
+    font-size: 15px;
+}
+
+.booking-detail {
+    width: 97%;
+    background: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.booking-detail-main {
+    .fae-button {
+        margin-right: 5px;
+    }
+}
+
+.booking-detail div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-service {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking-products {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-attributes,
+.booking-products {
+    cursor: pointer;
+}
+
+.booking-notes {
+    cursor: pointer;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+.booking-consent {
+    background: rgba(255, 166, 0, 0.2) !important;
+}
+
+.booking-consent-accepted {
+    background-color: rgba(0, 255, 0, 0.2) !important;
+}
+
+.consent-btn {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.booking-check-in {
+    padding: 10px;
+    width: 100%;
+}
+
+.session-btn {
+    padding: 10px;
+    position: relative;
+}
+
+.session-btn button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.end-session {
+    background-color: #b9cce0;
+    cursor: no-drop;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.end-session::after {
+    font-family: Roboto;
+    color: red;
+    content: "------------";
+    position: absolute;
+    transform: rotate(134deg);
+    left: 10px;
+}
+
+.active-session {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.normal-session {
+    background-color: gray;
+}
+
+.booking-container .fae--main-container {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.scroll-btn {
+    position: fixed;
+    width: 100%;
+    left: 92%;
+    bottom: 120px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: white;
+
+    .css-i4bv87-MuiSvgIcon-root {
+        background-color: #548dff;
+        border-radius: 20px;
+    }
+}

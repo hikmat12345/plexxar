@@ -1,0 +1,28 @@
+
+  
+  .alert {
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+  .card-input-field{
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+  }
+  .card-input-field:focus{outline: none;}
+  .fae--shadow-box{margin-bottom: 20px;}
+  label{font-size: 12px;}
+  .PaymentForm{width: 100%;}
+  .card-detail-container{
+    box-shadow: 1px 3px 7px #adadb0;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .card-heading{
+    padding: 5px;
+    color: #548dff;
+  }
+  .billing-detail{display: flex; gap: 10px;}
+  .billing-detail div{width: 100%;}

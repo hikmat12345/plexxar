@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+.add-working-address-main {
+  width: 100%;
+  background: url('../../img/main-background.png');
+  background-size: cover;
+}
+
+.add-or-update-address-form-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  margin: 40px auto;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+
+  .fae-button {
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+
+  .fae--shadow-box {
+    box-shadow: none !important;
+    background-color: #F1F6FA;
+  }
+
+  .fae--auto-complete-container,
+  .fae--text-field-container,
+  .fae--select-container {
+    width: 97%;
+
+    p {
+      margin: 0 !important;
+    }
+
+    .MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input:first-child {
+      font-size: 14px;
+    }
+  }
+}

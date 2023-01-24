@@ -1,0 +1,223 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+
+.add-client-container {
+  width: 100%;
+  background-color: #F4F8F9;
+
+  .add-client-main {
+    width: 70%;
+    margin: 50px auto;
+
+    .add-client-top-menu {
+      // box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+
+      .detailTop {
+        box-shadow: none;
+      }
+
+      .add-client-calendar-detail {
+        display: flex;
+        flex: 2;
+
+        .calendar-date,
+        .calendar-time {
+          width: 24%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+
+          }
+
+          h5 {
+            color: #333333;
+            margin-left: 5px;
+            font-weight: 600;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+          }
+
+        }
+
+        .provider-name-container {
+          .provider-name-head {
+            @include flex(none, center)
+          }
+        }
+      }
+    }
+
+    .add-client-save {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .add-client-detail {
+      width: 100%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 20px;
+      box-sizing: border-box;
+      background: white;
+      border-radius: 10px;
+
+      .customer-list {
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .line {
+        margin: 10px auto;
+        width: 70%;
+        border: 1px solid #507bdc;
+      }
+    }
+  }
+}
+
+.fae--add-client-page-form-wrapper {
+  width: 100%;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fae--add-client-page-form-button {
+  width: 150px;
+  height: 30px;
+  border-radius: 50px !important;
+}
+
+.add-customer-page-customer-unit {
+  @include flex(flex-start, center);
+  width: 95%;
+  gap: 20px;
+}
+
+.add-customer-page-customer-details {
+  @include flex(center, flex-start);
+  gap: 2px;
+  flex-direction: column;
+
+  .customer-name {
+    color: #507bdc;
+    font-family: 'Poppins';
+    font-weight: 600;
+  }
+}
+
+.customer-detail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+  margin: auto;
+
+  .customer-search {
+    @include flex(space-between, center);
+  }
+
+  // .MuiOutlinedInput-input {
+  //   // padding: 8px 14px !important;
+  // }
+}
+
+.customer-detail .shadow-box-padding {
+  padding: 5px;
+}
+
+.label-detail {
+  width: 100%;
+  color: #507bdc;
+}
+
+.Select-type {
+  display: flex;
+  width: 100%;
+}
+
+.Select-type div:first-of-type {
+  justify-content: left;
+}
+
+.plexaar-main-container {
+  gap: 20px;
+}
+
+.MuiSelect-root {
+  padding: 10px;
+}
+
+.fae--text-field-container p {
+  font-size: 10px;
+}
+
+.fae--text-field-container input {
+  font-size: 13px;
+}
+
+.provider-text-box {
+  margin: -5px;
+}
+
+//modal
+.modal-container {
+  margin-top: 100px;
+  margin-left: 30%;
+  height: 300px;
+  width: 500px;
+  background-color: rgb(255, 255, 255)
+}
+
+.modal-box {
+  background-color: white;
+  padding: 2% 2% 10% 5%;
+}
+
+.modal-text {
+  color: gray;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.modal-input {
+  width: 88%;
+  padding: 13px;
+  margin-left: 13px;
+
+}
+
+.modal-btn {
+  text-align: right;
+  gap: 10px;
+  padding: 2% 5% 1% 0%;
+}
+
+.modal-btn-1 {
+  margin-right: 2%;
+}
+
+@include tablet {
+  .fae--add-client-page-wrapper {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--add-client-page-wrapper {
+    width: 95%;
+  }
+}

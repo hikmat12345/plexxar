@@ -1,0 +1,18 @@
+@import '../../../App.scss';
+
+.consent-form-main{
+    width: 100%;
+    padding: 20px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.consent-question{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+}
+.consent-answer{
+    font-size: 14px;
+    font-weight: 400;
+    color: #548DFF;
+    line-height: 30px;
+}

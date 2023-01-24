@@ -1,0 +1,265 @@
+@import '../../App.scss';
+
+.topProfileParent {
+    width: 100%;
+
+    .topProfile {
+        width: 100%;
+        height: 100px;
+        background: #f4f8f9;
+        align-items: center;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 10px 20px, rgba(0, 0, 0, 0.09) 0px 6px 6px;
+
+        .topProfileSub {
+            width: 70%;
+            margin: 0 auto;
+            height: 100%;
+            box-sizing: border-box;
+
+            .TopSection {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+
+                .item {
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    gap: 10px;
+                    // padding: 10px 30px;
+                    box-sizing: border-box;
+
+                    .imgDiv {
+                        width: 35px;
+                        height: 35px;
+                        border: 2px solid #fff;
+                        padding: 5px;
+                        cursor: pointer;
+                        border-radius: 100%;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .text-item {
+                        padding: 0 20px;
+
+                        h3 {
+                            color: #548dff;
+                            font-family: 'Poppins', sans-serif;
+                            letter-spacing: 1;
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+
+                        span {
+                            font-size: 11px;
+                            font-weight: 600;
+                            color: #787878;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+
+                }
+
+
+                .createBooking {
+                    width: 200px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                        border: 2px solid #fff;
+                        border-radius: 10px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    span {
+                        color: #548dff;
+                        font-family: 'Poppins', sans-serif;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                        font-weight: 600;
+
+                        // line-height: 20px;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+.topheaderParent {
+
+    .topHeader {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+
+        .topHeaderLeft {
+            @include flex(center, center);
+            gap: 5px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+            }
+
+            .provider-select-dropdown {
+                .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+                    padding: 4px 10px !important;
+                }
+
+                .MuiSelect-select:focus {
+                    background: transparent !important;
+                }
+            }
+
+            span {
+                color: #333333;
+                font-family: 'Poppins', sans-serif;
+                text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 600;
+
+            }
+        }
+
+        .topHeaderRight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+            }
+
+            span {
+                color: #787878;
+                font-family: 'Poppins', sans-serif;
+                text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+
+
+.detailTOpParent {
+
+    .detailTop {
+        width: 100%;
+        height: 80px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+        .serviceDiv {
+            flex: 2;
+            height: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+
+            span {
+                text-transform: capitalize;
+                color: #787878;
+                font-size: 12px;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 5px;
+
+                svg {
+                    color: #787878;
+                    width: 15px;
+                    align-self: center;
+                    margin-top: 0px;
+                    margin-left: 5px;
+                    position: absolute;
+                }
+
+            }
+
+            h5 {
+                color: #333333;
+                font-weight: 600;
+                font-size: 15px;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        .service {
+            flex: 1;
+            height: 100%;
+
+            .detailItem {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
+
+                h5 {
+                    color: #333333;
+                    margin-left: 5px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: 'Poppins', sans-serif;
+                }
+
+            }
+
+            .expertIcon {
+                width: 60%;
+                margin: 0 auto;
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
